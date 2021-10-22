@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo da Velha</title>
+
+    <style type="text/css">
+        
+        #idJogador {
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 45px;
+            width: 404px;
+            height: 80;
+        }
+
+        .quadrado {
+            width: 130px;
+            height: 95px;
+            border: 2px solid rgb(255, 255, 255);
+            float: left;
+            text-align: center;
+            padding-top: 40px;
+            font-size: 50px;
+        }
+
+        .tabuleiro {
+            width: 404px;
+            height: 404px;
+            margin: auto;
+            color: white;
+        }
+    
+    </style>
+
+</head>
+<body style="background-color: #21262d;">
+    <div id="idJogador" style="text-align: center;">
+        <p style="float: left; margin-right: 10px; font-size: 40px; color: white;"><b>AGORA É A VEZ DO JOGADOR: </b></p>
+        <img src="images/simboloX.png" border="0" height="50">
+    </div>
+
+    <div class="tabuleiro">
+        <div id="a1" class="quadrado" jogada=""></div>
+        <div id="a2" class="quadrado" jogada=""></div>
+        <div id="a3" class="quadrado" jogada=""></div>
+
+        <div id="b1" class="quadrado" jogada=""></div>
+        <div id="b2" class="quadrado" jogada=""></div>
+        <div id="b3" class="quadrado" jogada=""></div>
+
+        <div id="c1" class="quadrado" jogada=""></div>
+        <div id="c2" class="quadrado" jogada=""></div>
+        <div id="c3" class="quadrado" jogada=""></div>
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
+
+</body>
+</html>
